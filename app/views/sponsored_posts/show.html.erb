@@ -1,0 +1,6 @@
+<h1><%="$#{@sponsored_post.price}: #{@sponsored_post.title}" %></h1>
+<p><%= @sponsored_post.body%></p>
+
+<div class="col-md-4">
+  <%= link_to "New Sponsored Post", new_topic_sponsored_post_path(@sponsored_post.topic, @sponsored_post), class: 'btn btn-success' %>
+</div>
