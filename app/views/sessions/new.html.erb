@@ -1,0 +1,22 @@
+<h2>Sing in</h2>
+
+<div class="row">
+  <div class="col-md-8">
+    <%= form_for :session, url: sessions_path do |f| %>
+      <div class="form_group">
+        <%= f.label :email %>
+        <%= f.email_feild :email, autofocus: true, class: 'form-control', placeholder: "Enter email" %>
+      </div>
+      <div class="form_group">
+        <%= f.label password %>
+        <%= f.password_feild :password, class: 'form-control', placeholder: "Enter password" %>
+      </div>
+      <div class="form_group">
+        <%= f.label :remember_me, class: 'checkbox' do %>
+          Remember Me <%= f.check_box :remember_me, :style => "margin-left: 10px;" %>
+        <% end %>
+        <%= f.submit "Sign in", class: 'btn btn-success' %>
+      </div>
+    <% end %>
+  </div>
+</div>
