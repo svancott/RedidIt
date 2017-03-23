@@ -4,20 +4,19 @@ class UsersController < ApplicationController
    end
 
    def confirm
-     @user = User.new
-     @user.name = params[:user][:name]
-     @user.email = params[:user][:email]
-     @user.password = params[:user][:password]
-     @user.password_confirmation = params[:user][:password_confirmation]
+     @user = User.new(user_params)
+    #  @user.name = params[:user][:name]
+    #  @user.email = params[:user][:email]
+    #  @user.password = params[:user][:password]
+    #  @user.password_confirmation = params[:user][:password_confirmation]
    end
 
    def create
      @user = User.new
-     @user.name = params[:user][:name]
-     @user.email = params[:user][:email]
-     @user.password = params[:user][:password]
-     @user.password_confirmation = params[:user][:password_confirmation]
-
+     @user.name = params[:name]
+     @user.email = params[:email]
+     @user.password = params[:password]
+     @user.password_confirmation = params[:password_confirmation]
 
      if @user.save
        flash[:notice] = "Welcome to Bloccit #{@user.name}!"
@@ -26,6 +25,12 @@ class UsersController < ApplicationController
        flash.now[:alert] = "There was an error creating your account. Please try again."
        render :new
      end
+   end
+
+   private
+
+   def user_params
+     params.require(:user).permit(:name, :email, :password, :password_confirmation)
    end
 
  end
