@@ -1,4 +1,5 @@
 require 'rails_helper'
+include SessionsHelper
 
 RSpec.describe SessionsController, type: :controller do
   let(:my_user) { User.create!(name: "Blochead", email: "blochead@bloc.io", password: "password") }
