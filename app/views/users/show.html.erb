@@ -4,7 +4,7 @@
       <br />
       <% avatar_url = @user.avatar_url(128) %>
       <% if avatar_url %>
-        <div class="mdeia-left">
+        <div class="media-left">
           <%= image_tag avatar_url, class: 'media-object' %>
         </div>
       <% end %>
@@ -18,30 +18,41 @@
     </div>
   </div>
 </div>
-<% if has_not_posted_or_commented(@user) %>
-  <div>
-    <h2> <%= @user.name %> has not submitted any posts yet.</h2>
-<% else %>
-    <h2>Posts</h2>
-    <%= render @user.posts %>
-    <h2>Comments</h2>
-    <%= render @user.comments %>
-  </div>
-<% end %>
-<% if @user.favorites.empty? %>
-  <div>
-    <h2><%= @user.name %> has no favorite posts.</h2>
-  </div>
-<% else %>
-  <div>
-    <h2 >Favorite Posts:</h2>
-      <div>
-        <% @user.favorites.each do |favorite| %>
-        <div>
-          <%= Post.where(post_id: favorite.id) %>
-
+<div class="row">
+  <div class="col-md-8">
+    <div class="media">
+      <br />
+      <% if has_not_posted_or_commented(@user) %>
+          <h2> <%= @user.name %> has not submitted any posts yet.</h2>
+      <% else %>
+          <h2>Posts</h2>
+          <%= render @user.posts %>
+          <h2>Comments</h2>
+          <%= render @user.comments %>
         </div>
-        <% end %>
+      <% end %>
+
+      <% if @user.favorites.empty? %>
+        <div>
+          <h2><%= @user.name %> has no favorite posts.</h2>
+        </div>
+      <% else %>
+        <div>
+          <h2>Favorite Posts:</h2>
+            <div>
+              <% @user.favorites.each do |favorite| %>
+              <div>
+                <%= link_to favorite.post.title, topic_post_path(favorite.post.topic, favorite.post) %>
+                <%= image_tag favorite.post.user.avatar_url(36) %>
+                Votes: <%= favorite.post.votes.count %>
+                Comments: <%= favorite.post.comments.count %>
+              </div>
+              <% end %>
+            </div>
+        </div>
+      <% end %>
       </div>
+    </div>
   </div>
-<% end %>
+</div>
+<br>
