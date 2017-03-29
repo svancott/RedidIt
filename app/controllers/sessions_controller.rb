@@ -19,7 +19,7 @@ class SessionsController < ApplicationController
     if current_user
       destroy_session(current_user)
       flash[:notice] = "You've been signed out, come back soon!"
-      redirect_to root_path
+      redirect_to(root_path)
     end
   end
 end
