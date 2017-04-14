@@ -1,6 +1,6 @@
 ## Bloccit
 
-# A Reddit replica built on the fundamentals of web development and Ruby on Rails.
+# A Reddit replica built with Ruby on Rails.
 
 Welcome to Bloccit!
 
