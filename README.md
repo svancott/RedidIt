@@ -10,13 +10,13 @@ Welcome to Bloccit!
 
 Bloccit is an app that I built that's based on the fan fave Reddit, "*the front page of the internet*".
 
-Users can sign up and sign in to get access to all the topics. Then they can post on the the topic of their choosing, and just like at Reddit, the posts get up-votes and down-votes, with the highest voted posts displaying first.
+Users can sign up and sign in to get access to all the topics. Then, they can post on the the topic of their choosing, and just like at Reddit, the posts get up-votes and down-votes, with the highest voted posts displaying first.
 
-Another ability users have it to comment on posts. Users can choose to *favorite* posts, and be notified by email when there are any new comments on those posts.
+Another ability users have is to comment on posts. Users can choose to *favorite* posts, and be notified by email when there are any new comments on those posts.
 
-Bloccit uses a ranking algorithm that's similar to Reddit's, making sure that the best and most popular posts display first, but decreasing slowly in rank over time.
+Bloccit uses a ranking algorithm that's similar to Reddit's, making sure that the best and most popular posts display first, but decrease slowly in rank over time.
 
-To keep the most popular current posts at the top, I made the ranking method as follows:
+To keep the most popular **current** posts at the top, I made the ranking method as follows:
 
 |class Post|
 |---|
@@ -46,6 +46,6 @@ I'm also experienced HTML5 and CSS, and have worked with SQL and Firebase.
 
 Currently, I'm looking for a developer role at a company that's as passionate as I am about doing good work.
 
-[Check out more at my site!](stevevancott.com).
+[Check out more at my site!](stevevancott.com)
 
 Feel free to email me at thevanicotti@gmail.com
