@@ -1,28 +1,51 @@
-## Bloccit: a Reddit replica to teach the fundamentals of web development and Rails.
+## Bloccit
 
+# A Reddit replica built on the fundamentals of web development and Ruby on Rails.
 
+Welcome to Bloccit!
 
-# README
+![Reddit logo](https://img.clipartfest.com/436e053b7393439efe1feeef7c46b1ce_social-redditsvg-4k-clipart-reddit_512-512.svg)
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+[Check out the app!](https://salty-plains-24479.herokuapp.com/)
 
-Things you may want to cover:
+Bloccit is an app that I built that's based on the fan fave Reddit, "*the front page of the internet*".
 
-* Ruby version
+Users can sign up and sign in to get access to all the topics. Then they can post on the the topic of their choosing, and just like at Reddit, the posts get up-votes and down-votes, with the highest voted posts displaying first.
 
-* System dependencies
+Another ability users have it to comment on posts. Users can choose to *favorite* posts, and be notified by email when there are any new comments on those posts.
 
-* Configuration
+Bloccit uses a ranking algorithm that's similar to Reddit's, making sure that the best and most popular posts display first, but decreasing slowly in rank over time.
 
-* Database creation
+To keep the most popular current posts at the top, I made the ranking method as follows:
 
-* Database initialization
+|class Post|
+|---|
+|has_many :votes|
 
-* How to run the test suite
+```def points
+  votes.sum(:value)
+end
+```
+```
+def update_rank
+  age_in_days = (created_at - Time.new(1970,1,1)) / 1.day.seconds
+  new_rank = points + age_in_days
+  update_attribute(:rank, new_rank)
+end
+```
 
-* Services (job queues, cache servers, search engines, etc.)
+This way you don't have high rated posts from 10 years ago still showing up at the top.
 
-* Deployment instructions
+# About me
 
-* ...
+I'm a developer who's passionate about writing good code and loves the satisfaction of solving problems.
+
+I've developed several apps using JavaScript, AngularJS, jQuery, and Ruby on Rails, using Git/Github as well as Heroku.
+
+I'm also experienced HTML5 and CSS, and have worked with SQL and Firebase.
+
+Currently, I'm looking for a developer role at a company that's as passionate as I am about doing good work.
+
+[Check out more at my site!](stevevancott.com).
+
+Feel free to email me at thevanicotti@gmail.com
