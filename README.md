@@ -46,6 +46,6 @@ I'm also experienced HTML5 and CSS, and have worked with SQL and Firebase.
 
 Currently, I'm looking for a developer role at a company that's as passionate as I am about doing good work.
 
-[Check out more at my site!](stevevancott.com)
+[Check out more at my site!](http://stevevancott.com)
 
 Feel free to email me at thevanicotti@gmail.com
