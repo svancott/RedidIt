@@ -6,7 +6,7 @@ Welcome to **_RedidIt_**!
 
 ![Reddit logo](https://img.clipartfest.com/436e053b7393439efe1feeef7c46b1ce_social-redditsvg-4k-clipart-reddit_512-512.svg)
 
-[Check out the app!](https://salty-plains-24479.herokuapp.com/)
+[Check out the app!](https://redidit.herokuapp.com/)
 
 **_RedidIt_** is an app that I built that's based on the fan fave Reddit, "*the front page of the internet*".
 
