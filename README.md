@@ -36,7 +36,7 @@ end
 
 This way you don't have high rated posts from 10 years ago still showing up at the top.
 
-I hope you've enjoyed **_RedidIt_**! Make sure to [Check out the app!](https://salty-plains-24479.herokuapp.com/)
+I hope you've enjoyed **_RedidIt_**! Make sure to [Check out the app!](https://redidit.herokuapp.com/)
 
 
 # About me
