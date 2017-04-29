@@ -1,2 +1,19 @@
-<h1>Hi there!</h1>
-<h4>This is a site I made that's similar to Reddit. If you wanna see some more of my projects, check out <strong><%= link_to 'my site', 'http://SteveVancott.com' %></strong>.</h4>
+<div style="text-align:center;">
+  <h1 class="about-title">About</h1>
+    <div class="about">
+      <p class="intro"> I’m a developer who’s passionate about making a <strong>difference</strong>.</p>
+
+      <p>If you have a project you're working on (or want to start) and need an extra hand, please feel free to reach out to me!</p>
+
+      <div class="my-links">
+        <%= link_to root_path do %>
+   <%= image_tag "image.jpg", class: "some css class here" %>
+<% end %>
+        <a class="my-link" href="http://stevevancott.com"><img src="../assets/images/chitChat.png" alt="chitchat logo" style="width:50px;height:50px;"></a>
+        <a class="my-link" href="https://github.com/svancott/"><img src="../assets/images/github-logo.png" alt="github logo" style="width:50px;height:50px;"></a>
+
+      </div>
+    </div>
+
+  <p class="about">Thanks for visiting <strong>Time2Jam!</strong> Come back soon!</p>
+</div>
