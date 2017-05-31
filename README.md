@@ -34,7 +34,7 @@ end
 
 This way you don't have high rated posts from 10 years ago still showing up at the top.
 
-I hope you've enjoyed **_RedidIt_**! [Check out the app!](http://stevevancott.com/portfolio/redidit/)
+I hope you've enjoyed **_RedidIt_**! [Check out the app on my site!](http://stevevancott.com/portfolio/redidit/)
 
 
 # About me
