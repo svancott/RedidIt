@@ -6,8 +6,6 @@ Welcome to **_RedidIt_**!
 
 ![Reddit logo](https://img.clipartfest.com/436e053b7393439efe1feeef7c46b1ce_social-redditsvg-4k-clipart-reddit_512-512.svg)
 
-[Check out the app!](https://redidit.herokuapp.com/)
-
 **_RedidIt_** is an app that I built that's based on the fan fave Reddit, "*the front page of the internet*".
 
 Users can sign up and sign in to get access to all the topics. Then, they can post on the the topic of their choosing, and just like at Reddit, the posts get up-votes and down-votes, with the highest voted posts displaying first.
@@ -36,7 +34,7 @@ end
 
 This way you don't have high rated posts from 10 years ago still showing up at the top.
 
-I hope you've enjoyed **_RedidIt_**! Make sure to [Check out the app!](https://redidit.herokuapp.com/)
+I hope you've enjoyed **_RedidIt_**! [Check out the app!](http://stevevancott.com/portfolio/redidit/)
 
 
 # About me
