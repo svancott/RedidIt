@@ -103,7 +103,7 @@ RSpec.describe User, type: :model do
 
     it "returns the proper Gravatar url for a known email entity" do
 
-      expected_gravatar = "http://gravatar.com/avatar/bb6d1172212c180cfbdb7039129d7b03.png?s=48"
+      expected_gravatar = "https://gravatar.com/avatar/bb6d1172212c180cfbdb7039129d7b03.png?s=48"
 
       expect(known_user.avatar_url(48)).to eq(expected_gravatar)
     end
