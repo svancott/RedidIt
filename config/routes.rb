@@ -16,5 +16,6 @@ Rails.application.routes.draw do
   resources :sessions, only: [:new, :create, :destroy]
 
   get 'about' => 'welcome#about'
+  get 'play' => 'welcome#play'
   root 'welcome#index'
 end

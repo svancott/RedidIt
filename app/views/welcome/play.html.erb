@@ -1,0 +1,109 @@
+
+<% if current_user && current_user.email == "thevanicotti@gmail.com" %>
+
+LAST TIME UPDATED: <%= Time.now.strftime("%H:%M:%S") %><br><br>
+
+<div class="col-md-3">
+  <table>
+    <thead>
+      <tr>
+        <td>----</td>
+        <td>2 Minute Change ----</td>
+      </tr>
+    </thead>
+    <% @twos[0,20].each do |coin_array| %>
+      <tr>
+        <td><%= coin_array[:name] %></td>
+        <td><%= coin_array[:two] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div><br><br>
+
+<div class="col-md-3">
+  <table>
+    <thead>
+      <tr>
+        <td>----</td>
+        <td>5 Minute Change ----</td>
+      </tr>
+    </thead>
+    <% @fives[0,20].each do |coin_array| %>
+      <tr>
+        <td><%= coin_array[:name] %></td>
+        <td><%= coin_array[:five] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div><br><br>
+
+<div class="col-md-3">
+  <table>
+    <thead>
+      <tr>
+        <td>----</td>
+        <td>10 Minute Change ----</td>
+      </tr>
+    </thead>
+    <% @tens[0,20].each do |coin_array| %>
+      <tr>
+        <td><%= coin_array[:name] %></td>
+        <td><%= coin_array[:ten] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div class="col-md-3">
+  <table>
+    <thead>
+      <tr>
+        <td>----</td>
+        <td>15 Minute Change ----</td>
+      </tr>
+    </thead>
+    <% @fifteens[0,20].each do |coin_array| %>
+      <tr>
+        <td><%= coin_array[:name] %></td>
+        <td><%= coin_array[:fifteen] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div class="col-md-3">
+  <table>
+    <thead>
+      <tr>
+        <td>----</td>
+        <td>30 Minute Change ----</td>
+      </tr>
+    </thead>
+    <% @thirties[0,20].each do |coin_array| %>
+      <tr>
+        <td><%= coin_array[:name] %></td>
+        <td><%= coin_array[:thirty] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+<div class="col-md-6">
+  <table>
+    <thead>
+      <tr>
+        <td>----</td>
+        <td>60 Minute Change ----</td>
+      </tr>
+    </thead>
+    <% @hours[0,20].each do |coin_array| %>
+      <tr>
+        <td><%= coin_array[:name] %></td>
+        <td><%= coin_array[:hour] %></td>
+      </tr>
+    <% end %>
+  </table>
+</div>
+
+
+<% end %>

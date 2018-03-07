@@ -10,6 +10,9 @@ class TopicsController < ApplicationController
     @topic = Topic.find(params[:id])
   end
 
+  def play
+  end
+
   def new
     @topic = Topic.new
   end
